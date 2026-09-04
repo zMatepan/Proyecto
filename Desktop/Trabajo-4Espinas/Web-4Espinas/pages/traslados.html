@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital de traslados</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="headertrastaldo" class="encabezado-app">
+        <h1>Hospital de clinicas</h1>
+        <h2>Sistema de traslados y trazabilidad</h2>
+    </header>
+<main>
+    <section id="traslado1"> 
+        <p>Buscar paciente:</p>
+    <input type="text" placeholder="Ingrese nombre o ID">
+    <button class="btn-primary">Buscar</button>
+    </section>
+    
+    <section id="traslado2">
+        <h1>Datos del paciente</h1>
+        <label for="pac-nombre">Nombre:</label>
+        <input type="text" id="pac-nombre" readonly>
+        <label for="pac-id">ID:</label>
+        <input type="text" id="pac-id" readonly>
+        <label for="pac-edad">Edad:</label>
+        <input type="text" id="pac-edad" readonly>
+        <label for="pac-habitacion">Habitacion:</label>
+        <input type="text" id="pac-habitacion" readonly>
+        <label for="pac-estado">Estado:</label>
+        <input type="text" id="pac-estado" readonly>
+    </section>
+
+<section id="traslado3">
+    <h3>Registrar traslado</h3>
+
+    <label for="origen">Origen:</label>
+    <select id="origen">
+        <option>Urgencias</option>
+        <option>Habitacion</option>
+        <option>Rayos X</option>
+        <option>Laboratorio</option>
+        <option>Quirofano</option>
+    </select>
+
+    <label for="destino">Destino:</label>
+    <select id="destino">
+        <option>Urgencias</option>
+        <option>Habitacion</option>
+        <option>Rayos X</option>
+        <option>Laboratorio</option>
+        <option>Quirofano</option>
+    </select>
+
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha">
+
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora">
+
+    <label for="responsable">Responsable:</label>
+    <input type="text" id="responsable">
+
+    <label for="motivo">Motivo</label>
+    <input type="text" id="motivo">
+
+    <button class="btn-primary">Registrar traslado</button>
+    </section>
+</main>
+</body>
+</html>
